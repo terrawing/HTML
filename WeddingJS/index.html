@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Wedding">
+        <meta name="author" content="William Wong">
+        <script src="js/jquery.js"></script>
+        <script src="js/jscripts.js"></script>
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Scrolling Nav JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+        
+        <script src="js/countdown.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/scrolling-nav.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <title>John and Shadi's Wedding</title>
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid spacing">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+                </div>
+                  
+                <div class="collapse navbar-collapse navbar-ex1-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#the-couple">The Couple</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#map">Map</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#rsvp">RSVP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Intro Section -->
+        <section id="intro" class="intro-section full">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="container container-table">
+                            <div class="row vertical-center-row">
+                                <div class="col-md-2"></div>
+                                <div class="text-center col-md-8 introbackground">
+                                    <br />
+                                    <hr class="style-one">
+                                        <h1 class="cursive textgolden">John <span class="smaller">&</span> Shadi</h1>                                   
+                                        <h2 class="couple textgreen">June 30, 2017</h2>
+                                        <br />
+                                        <div class="clockbackground"><h2 class="couple textgreen" id="clock"></h2></div>
+                                    <hr class="style-one">
+                                    <br />
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Us Section -->
+        <section id="the-couple" class="the-couple-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr class="style-two">
+                        <br />
+                        <h1 class="couple">THE COUPLE</h1>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img class="img-responsive couple slideanim" src="images/couple.jpg" alt="couple">
+                            </div>
+                            <div class="col-md-4 text-left">
+                                <h2 class="couple">John & Shadi</h2>
+                                <p class="couple">If we had it our way, all of us would be on a pontoon gambling boat this weekend with Dark and Stormy's in hand, setting sail for 80 degree weather. Since our parent's have been patiently waiting for a ceremony though, we decided June nuptials on the edge of the world (Montauk feels like earth's end, no?) would suffice. There are plenty of wish lanterns to be lit and bottles of champagne waiting to be popped - all we need are your lovely faces.</p>
+                            </div>
+                        </div>                        
+                        <br /><br />                        
+                        <hr class="style-two">
+                        <br /><br /><br /><br />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map section -->
+        <section id="map" class="map-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr class="style-two">
+                        <br />
+                        <h1 class="couple">CHAPEL LOCATION</h1>
+                        <br />
+                        <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                        <div id="chapelMap" class="slideanim"></div>
+                        <br />
+                        <p class="couple">255 Alton Tower Circle, Scarborough, ON M1V 4E7</p>
+                        <script src="js/map.js"></script>                      
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBITwQZROP7FeFxRMJctfOVCdQC1nrrtkg&callback=initMap"></script>
+                        <br /><br />                        
+                        <hr class="style-two">
+                        <br /><br /><br /><br />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- rsvp section -->
+        <section id="rsvp" class="rsvp-section">
+            <div class="container">
+                <div class="row">
+                    <hr class="style-two">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <br />
+                        <h1 class="couple">RSVP</h1>
+                        <br />
+                        <div class="form-group text-left slideanim">
+                            <label><span class="required">*</span> are required fields.</label>
+                        </div>
+                        <form action="scripts/validation.php" method="post">
+                            <input type="hidden" name="RSVP" value="yes">
+                            
+                            <div class="form-group text-left slideanim">
+                                <label for="title">Title: </label> <label for="required" class="required">*</label>
+                                <select class="form-control" name="inputTitle">
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms.">Ms.</option>
+                                </select>
+                            </div>    
+                            
+                            <div class="form-group text-left slideanim">
+                                <label for="firstName">First Name: </label> <label for="required" class="required">*</label> <label for="required" class="required" name="error1"></label>
+                                <input type="text" class="form-control" name="inputFirstName" placeholder="First name" required>
+                            </div>
+                        
+                            <div class="form-group text-left slideanim">
+                                <label for="lastName">Last Name: </label> <label for="required" class="required">*</label> <label for="required" class="required" name="error2"></label>
+                                <input type="text" class="form-control" name="inputLastName" placeholder="Last name" required>
+                            </div>
+                        
+                            <div class="form-group text-left slideanim">
+                                <label for="email">Email: </label> <label for="required" class="required">*</label> <label for="required" class="required" name="error3"></label>
+                                <input type="text" class="form-control" name="inputEmail" placeholder="Email" required>
+                            </div>
+                        
+                            <div class="form-group text-left slideanim">   
+                                <label for=rsvpStatus">RSVP</label>
+                                             
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active">
+                                        <a href="#yes" role="tab" data-toggle="tab" id="rsvpYes">Yes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#no" role="tab" data-toggle="tab" id="rsvpNo">No</a>
+                                    </li>
+                                </ul>
+                            
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <!-- Yes -->
+                                    <div class="tab-pane fade active in" id="yes">
+                                        <h4>You have accept with pleasure. Please fill in the information below and click submit.</h4>
+                                        <br />
+                                
+                                        <div class="form-group text-left">
+                                            <label for="numOfGuests">Number of Guests: </label>
+                                            <select class="form-control" name="inputNumOfGuests">
+                                                <option value="0">0</option>
+                                                <option selected="selected" value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5+">5+</option>
+                                            </select>
+                                        </div>
+                                    
+                                        <div class="form-group text-left">
+                                            <label for="guestsNames">Guest Name(s): </label>
+                                            <textarea class="form-control" rows="5" name="inputGuestNames" placeholder="1. John Smith"></textarea>
+                                        </div>
+                                    
+                                        <div class="form-group text-left">
+                                            <label for="entreeSelection">Entree Selection: </label>
+                                            <div class="radio">
+                                                <label><input type="radio" name="inputEntree" value="1" checked="checked">Chicken and rice</label>
+                                            </div>
+                                            <div class="radio text-left">
+                                                <label><input type="radio" name="inputEntree" value="2">Steak and potatoes</label>
+                                            </div>
+                                            <div class="radio text-left">
+                                                <label><input type="radio" name="inputEntree" value="3">Tomato soup (Vegetarian)</label>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form-group text-left">
+                                            <label for="specialInstructions">Special Instuctions (Optional): </label>
+                                            <textarea class="form-control" rows="5" name="inputSpecialInstructions" placeholder="Enter any special instructions needed on the entree. (Eg: Food Allergies)"></textarea>
+                                        </div>
+                                    
+                                        <br />
+                                        <div class="form-group">
+                                            <input type="submit" class="btn  btn-warning form-control disabled" name="inputSubmitYes" id="inputSubmitYes" value="Submit">
+                                        </div>
+                                    </div>
+                              
+                                    <!-- No -->
+                                    <div class="tab-pane fade" id="no">
+                                        <h4>You have decline with regrets. Please click submit to finish.</h4>
+                                        <br />
+                                        <div class="form-group">                                            
+                                            <input type="submit" class="btn  btn-warning form-control disabled" name="inputSubmitNo" id="inputSubmitNo" value="Submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                         
+                        </form>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+            <br /><br />
+            <hr class="style-two">
+            <br /><br /><br /><br />
+        </section>
+        
+        <!-- Modal Success-->
+        <div class="modal fade" id="myModalSuccess" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Successfully Submitted</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for successfully filling in your RSVP information. A email copy has been sent to you.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Fail-->
+        <div class="modal fade" id="myModalFail" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" onclick="document.location+='#rsvp'; returnfalse;">&times;</button>
+                        <h4 class="modal-title">Incorrect Information Entered</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please fix the incorrect information that is marked and resubmit again.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default pull-left" data-dismiss="modal" onclick="document.location+='#rsvp'; returnfalse;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer section -->
+        <section id="footer" class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="footerCursive">June 30, 2017</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+                 
+    </body>
+</html>
