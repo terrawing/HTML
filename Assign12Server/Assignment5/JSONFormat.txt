@@ -1,0 +1,28 @@
+﻿{
+"FirstName":"Tyler",
+"LastName":"Dunn",
+"Company":"Fake Company",
+"Address":"123 Fake Street",
+"City":"Toronto",
+"State":"Ontario",
+"Country":"Canada",
+"PostalCode":"M1K4A9",
+"Phone":"(416) 221-4679",
+"Fax":"(416) 123-4567",
+"Email":"fake@hotmail.com",
+"SupportRepId":3
+}
+
+{
+  "CustomerId": 1,
+  "Address": "sample string 2",
+  "City": "sample string 3",
+  "State": "sample string 4",
+  "Country": "sample string 5",
+  "PostalCode": "sample string 6"
+}
+
+{
+"CustomerId": 61,
+"SupportRepId": 5
+}

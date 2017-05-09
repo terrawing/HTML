@@ -1,0 +1,8 @@
+﻿{
+"Category":"Acoustic guitar",
+"InstrumentName":"DR-100 Acoustic Vintage Sunburst",
+"ModelCode":"DR100VSCH",
+"MSRP":169
+}
+
+https://www.long-mcquade.com/

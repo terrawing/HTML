@@ -1,0 +1,268 @@
+﻿@model Assign12Client.SSOS.SubjectOutline
+
+@{
+    ViewBag.Title = "Course Details";
+}
+
+<h2>Course Details - @Html.Raw(Model.subjectCode)</h2>
+
+<div>
+    <h4>Subject Outline</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <!-- http://stackoverflow.com/questions/19320467/c-sharp-razor-syntax-html-Raw-displaying-as-text-not-html -->
+        <dt>
+            <strong>Accommodation For Students With Disabilities</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.accommodationForStudentsWithDisabilities)
+        </dd>
+        <br />
+        <dt>
+            <strong>Approved By</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.approvedBy)
+        </dd>
+        <br />
+        <dt>
+            <strong>Cheating And Plagiarism</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.cheatingAndPlagiarism)
+        </dd>
+        <br />
+        <dt>
+            <strong>Common Last Review Date</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.commonLastReviewDate)
+        </dd>
+        <br />
+        <dt>
+            <strong>Common Last Revision Date</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.commonLastRevisionDate)
+        </dd>
+        <br />
+        <dt>
+            <strong>Credit Status</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.creditStatus)
+        </dd>
+        <br />
+        <dt>
+            <strong>Section</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.customSection)
+        </dd>
+        <br />
+        <dt>
+            <strong>Section Title</strong>
+            @Html.DisplayNameFor(model => model.customSectionTitle)
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.customSectionTitle)
+        </dd>
+        <br />
+        <dt>
+            <strong>Discrimination Harassment</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.discriminationHarassment)
+        </dd>
+        <br />
+        <dt>
+            <strong>Essential Employability Skills</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.essentialEmployabilitySkills)
+        </dd>
+        <br />
+        <dt>
+            <strong>Learning Outcomes</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.learningOutcomes)
+        </dd>
+        <br />
+        <dt>
+            <strong>Mode of Instruction</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.modeOfInstruction)
+        </dd>
+        <br />
+        <dt>
+            <strong>Modes of Evaluation</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.modesOfEvaluation)
+        </dd>
+        <br />
+        <dt>
+            <strong>Prerequisites</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.prerequisites)
+        </dd>
+        <br />
+        <dt>
+            <strong>Prescribed Texts</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.prescribedTexts)
+        </dd>
+        <br />
+        <dt>
+            <strong>Promotion Policy</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.promotionPolicy)
+        </dd>
+        <br />
+        <dt>
+            <strong>Published</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.published)
+        </dd>
+        <br />
+        <dt>
+            <strong>Published Specified</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.publishedSpecified)
+        </dd>
+        <br />
+        <dt>
+            <strong>Reference Material</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.referenceMaterial)
+        </dd>
+        <br />
+        <dt>
+            <strong>Required Supplies</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.requiredSupplies)
+        </dd>
+        <br />
+        <dt>
+            <strong>School Code</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.schoolCode)
+        </dd>
+        <br />
+        <dt>
+            <strong>School Last Review Date</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.schoolLastReviewDate)
+        </dd>
+        <br />
+        <dt>
+            <strong>School Last Revision Date</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.schoolLastRevisionDate)
+        </dd>
+        <br />
+        <dt>
+            <strong>School Name</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.schoolName)
+        </dd>
+        <br />
+        <dt>
+            <strong>Subject Code</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.subjectCode)
+        </dd>
+        <br />
+        <dt>
+            <strong>Subject Description</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.subjectDescription)
+        </dd>
+        <br />
+        <dt>
+            <strong>Subject Name</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.subjectName)
+        </dd>
+        <br />
+        <dt>
+            <strong>Subject Title</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.subjectTitle)
+        </dd>
+        <br />
+        <dt>
+            <strong>Topic Outline</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.topicOutline)
+        </dd>
+        <br />
+        <dt>
+            <strong>Year Semester</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.yearSemester)
+        </dd>
+        <br />
+        <dt>
+            <strong>Year Semester Label</strong>
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.yearSemesterLabel)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
